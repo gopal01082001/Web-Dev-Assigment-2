@@ -1,0 +1,15 @@
+<!-- Q.6 What’s z-index and How does it Function ?
+z-index is a CSS property that determines the stacking order of positioned elements along the z-axis (the depth axis) on a webpage. It controls how elements are layered and displayed in relation to other elements.
+The z-index property accepts an integer value that specifies the stack level of an element. Higher values indicate a higher stack level, meaning the element will be positioned above elements with lower z-index values. If multiple elements have the same z-index value, their stacking order will follow the normal document flow.
+Here's how z-index functions:
+Stacking Contexts: Each positioned element (with a position value of absolute, relative, or fixed) creates a stacking context. Elements within a stacking context are stacked relative to other elements within the same stacking context.
+Higher z-index Values: Elements with higher z-index values are positioned above elements with lower z-index values within the same stacking context.
+Parent-Child Relationship: The z-index property also affects the stacking order of child elements within a parent element. Child elements with higher z-index values will be positioned above their siblings with lower z-index values, regardless of their position within the DOM structure.
+Stacking Order: The stacking order is determined by comparing z-index values within the same stacking context. Elements outside the stacking context are stacked below elements within the stacking context, regardless of their z-index values.
+Stacking Context Hierarchy: Stacking contexts can be nested, creating a hierarchy of stacking contexts. In this case, elements within a higher-level stacking context will be positioned above elements within lower-level stacking contexts, even if the lower-level element has a higher z-index value.
+It's important to note that z-index only works on positioned elements (position: relative, position: absolute, or position: fixed). It has no effect on non-positioned elements.
+Using z-index, you can control the layering and stacking order of elements on a webpage, allowing you to precisely control how they overlap and interact visually. It's commonly used in creating overlays, dropdown menus, modal dialogs, and other UI components where the order of display is crucial.
+
+
+
+ -->

@@ -1,0 +1,14 @@
+<!-- Q.5 How is Border-box different from Content Box?
+border-box and content-box are two different values for the CSS box-sizing property, which defines how the width and height of an element are calculated. Here's how they differ:
+Content Box (Default):
+When box-sizing is set to content-box, the width and height of an element are calculated excluding the padding and border.
+In other words, the specified width and height represent only the content area of the element, and any padding or border added to the element increases its overall dimensions.
+This means that if you set a width of 300 pixels on an element with 10 pixels of padding and a 2-pixel border, the total width of the element (including padding and border) will be 324 pixels (300px + 10px + 10px + 2px + 2px).
+Border Box:
+When box-sizing is set to border-box, the width and height of an element are calculated including the padding and border.
+In this mode, the specified width and height include the content, padding, and border, and any padding or border added to the element does not increase its overall dimensions.
+This means that if you set a width of 300 pixels on an element with 10 pixels of padding and a 2-pixel border, the total width of the element (including padding and border) will be exactly 300 pixels.
+The main advantage of using border-box is that it simplifies the sizing and layout calculations. When you set explicit dimensions (width and height) on an element with border-box, you have full control over the total dimensions, including padding and border. This can make it easier to create consistent and predictable layouts.
+On the other hand, the default content-box behavior allows you to have more precise control over the content area and separate it from the padding and border. However, it can require additional calculations and considerations when sizing and positioning elements.
+You can choose the box-sizing value that best suits your needs based on the specific layout requirements and how you want to handle the sizing of your elements.
+

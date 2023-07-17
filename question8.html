@@ -1,0 +1,49 @@
+<!-- Q.8 Difference between absolute and relative and sticky and fixed position explain with example.
+Here's an explanation of the differences between absolute, relative, sticky, and fixed positions in CSS, along with examples:
+Absolute Position:
+Elements with position: absolute are positioned relative to their closest positioned ancestor (an ancestor with a position value of relative, absolute, or fixed), or the initial containing block if there is no positioned ancestor.
+An absolutely positioned element is taken out of the normal document flow, so it doesn't affect the positioning of other elements.
+It can be moved anywhere on the page using the top, right, bottom, and left properties.
+Example:
+css
+.container {
+  position: relative;
+}
+.absolute-element {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+Relative Position:
+Elements with position: relative are positioned relative to their normal position in the document flow.
+It allows the use of positioning properties like top, right, bottom, and left to move the element from its normal position.
+Other elements in the document flow are not affected by the relative positioning of the element.
+Example:
+css
+Copy code
+.relative-element {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+Sticky Position:
+Elements with position: sticky are positioned based on the user's scroll position.
+A sticky element is initially positioned according to the normal document flow, but then becomes fixed (like position: fixed) when the user scrolls to a specific threshold or "sticky" position.
+It behaves as position: relative until the scroll position reaches the defined threshold, and then switches to position: fixed.
+Example:
+css
+.sticky-element {
+  position: sticky;
+  top: 100px;
+}
+Fixed Position:
+Elements with position: fixed are positioned relative to the viewport (the browser window) and do not move when the page is scrolled.
+It is commonly used for elements that need to remain in a fixed position on the screen, such as navigation menus or banners.
+Fixed elements are removed from the normal document flow and do not affect the positioning of other elements.
+Example:
+.fixed-element {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+Understanding the differences between these positioning properties allows you to control the layout and positioning of elements on your webpage according to your specific requirements.
